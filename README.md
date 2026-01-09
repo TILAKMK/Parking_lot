@@ -1,23 +1,24 @@
 🚗 Parking Lot Management System (Stack – C)
 
-A simple parking lot management system built in C using the Stack (LIFO) data structure.
+A stack-based parking lot management system implemented in C that efficiently manages vehicles in a single-lane parking environment using the Last-In-First-Out (LIFO) principle.
 
-It simulates a single-lane parking scenario where vehicles are parked and retrieved based on Last-In-First-Out logic.
-The system also supports middle vehicle retrieval using a temporary stack, preserving the order of remaining vehicles.
+The system models real-world parking scenarios where vehicles are parked sequentially and retrieved with minimal movement. It also supports middle vehicle retrieval using a temporary stack, preserving the correct order of remaining vehicles.
 
 ✨ Features
 
-Stack-based parking logic
+LIFO-based parking and retrieval
 
-Middle vehicle retrieval support
+Temporary stack support for middle vehicle removal
 
-Overflow & underflow handling
+Real-time parking status display
+
+Overflow and underflow protection
 
 Menu-driven console interface
 
-Colorized terminal UI
+Retro styled colored terminal UI
 
-🛠️ Tech Used
+🛠️ Tech Stack
 
 C Programming
 
@@ -29,12 +30,30 @@ ANSI Escape Codes
 gcc park.c -o park
 ./park
 
-🚀 Future Scope
+📌 Use Cases
 
-Multi-lane parking
+Valet parking systems
 
-File-based record storage
+Compact single-lane parking areas
 
-Billing system
+Automated parking simulations
+
+Learning data structures through real-world models
+
+⚙️ How It Works
+
+New vehicles are pushed into the stack.
+
+Last parked vehicles can be popped instantly.
+
+For middle vehicles, a temporary stack is used to safely retrieve the target while maintaining order.
+
+🚀 Future Enhancements
+
+Multi-lane parking support
+
+Persistent file storage
+
+Parking fee calculation
 
 GUI / Web version
